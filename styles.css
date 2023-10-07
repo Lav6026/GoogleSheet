@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#body {
+    width: fit-content;
+}
+
+main {
+    width: 100vw;
+    height: 85vh;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    margin: auto;
+}
+
+#header {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    width: fit-content;
+    z-index: 10;
+}
+
+#header>b {
+    width: 100px;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    flex-shrink: 0;
+    padding: 10px 0;
+}
+
+.row {
+    display: flex;
+}
+
+.row b,
+.row >div {
+    padding: 10px 0;
+    width: 100px;
+    flex-shrink: 0;
+    border: 1px solid #dbdbdb;
+}
+
+.row b:first-child {
+    text-align: center;
+    position: sticky;
+    left: 0;
+    background-color: white;
+}
+
+
+.add_rows {
+    width: 100%;
+    height: 50px;
+    background-color: #f8faf8;
+    display: flex;
+    align-items: center;
+}
+
+.tools {
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+#cellName {
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.startCell {
+    display: flex;
+    background-color: lightgray;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 200;
+}
+
+header{
+    width: 100vw;
+    background-color: #f9fbfd;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+}
+
+.tool-bar{
+    width: 95%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #edf2fa;
+    margin: auto;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.font-styles{
+    height: 50%;
+    width: 110px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.formating{
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr{
+    height: 60%;
+    background-color: lightgray;
+}
+
+.color-formating{
+    display: flex;
+}
+
+#bold, #italic, #underline{
+    cursor: pointer;
+}
+
+.active{
+    background-color: #d3e3fd;
+}
+
+.style-btn{
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.style-btn:hover{
+    background-color: #dbdbdb;
+    cursor: pointer;
+}
